@@ -1,0 +1,170 @@
+/*------------------------------ PÁGINA ------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fondo{
+    background-color: rgb(39, 39, 39);
+ }
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor a{
+    text-decoration: none;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    color: rgb(255, 196, 0);
+}
+
+header{
+    padding: 30px 0;
+    background-color:black;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/*------------------------------ PELICULA DESTACADA ------------------------------*/
+.pelicula-destacada {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #FFF;
+	background:linear-gradient(rgba(0, 0, 0, .50) 0%, rgb(0, 0, 0, .50) 100%), url(../assets/images/cars.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+
+.pelicula-destacada .contenedor{ 
+	margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.pelicula-destacada .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em; 
+}
+
+.pelicula-destacada .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;  
+}
+
+.pelicula-destacada .boton{
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-destacada .boton i{
+	margin-right: 1.25em;
+}
+
+.pelicula-principal .boton:hover{
+	background: #fff;
+	color: #000;
+}
+
+/*------------------------------ PELICULAS RECOMENDADAS ------------------------------*/
+.preco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #FFF;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.pdest h3{
+    font-size: 24px;
+}
+
+.peliculas-recomendadas{
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.tarjetas{
+    display: flex;
+
+}
+
+/*------------------------------ FOOTER ------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:black;
+    padding: 30px;
+}
+
+footer p{
+    font-size: 14px;
+    color: rgb(240, 245, 248);
+}
+
+/*------------------------------ RESOLUCIONES ------------------------------*/
+@media screen and (max-width: 800px){
+	header .nombre{
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-destacada{
+		font-size: 14px;
+	}
+
+	.pelicula-destacada .descripcion{
+		max-width: 100%;
+	}
+}

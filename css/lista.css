@@ -1,0 +1,114 @@
+/*------------------------------ PÁGINA ------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 39, 39);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fondo{
+    background-color: rgb(39, 39, 39);
+ }
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor a{
+    text-decoration: none;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    color: rgb(255, 196, 0);
+}
+
+header{
+    padding: 30px 0;
+    background-color:black;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 250px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+#listafavs{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*------------------------------ FOOTER ------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:black;
+    padding: 30px;
+}
+
+footer p{
+    font-size: 14px;
+    color: rgb(240, 245, 248);
+}
+
+/*------------------------------ RESOLUCIONES ------------------------------*/
+@media screen and (max-width: 800px){
+	header .nombre{
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-destacada{
+		font-size: 14px;
+	}
+
+	.pelicula-destacada .descripcion{
+		max-width: 100%;
+	}
+}
